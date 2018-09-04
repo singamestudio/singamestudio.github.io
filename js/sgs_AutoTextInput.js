@@ -10,7 +10,7 @@ $(function(){
 	// 処理
 	// -----------------
 	// 自動入力のセット
-	_SetupAutoInput('#autoInput', "> sin(studio)");
+	_SetupAutoInput('#autoInput', "> sin(studio)<br />Please Enter");
 	
 	
 	// -----------------
@@ -44,7 +44,7 @@ $(function(){
 				typeSpeed: 80,
 				startDelay: 0,
 				loop: false,
-				contentType: 'text',
+				contentType: 'html',
 			});	
 		};
 		// 自動入力停止

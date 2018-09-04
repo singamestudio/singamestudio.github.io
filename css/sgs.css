@@ -1,3 +1,16 @@
 body {
   background-color: #000;
 }
+
+.sgs-fade {
+  /* 変更 */
+  transition: opacity 1s, visibility 1s;
+    
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sgs-fade.is-show {  
+  opacity: 1;
+  visibility: visible;
+}
