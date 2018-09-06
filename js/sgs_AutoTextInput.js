@@ -10,7 +10,7 @@ $(function(){
 	// 処理
 	// -----------------
 	// 自動入力のセット
-	_SetupAutoInput('#autoInput', "> sin(studio)<br />Please Enter");
+	_SetupAutoInput('#autoInput', "> sin(studio) ");
 	
 	
 	// -----------------
@@ -41,10 +41,15 @@ $(function(){
 			typed = new Typed(domID,
 			{
 				strings:[inputString],
-				typeSpeed: 80,
-				startDelay: 0,
+				typeSpeed: 40,
+				startDelay: 5,
 				loop: false,
 				contentType: 'html',
+				onComplete: function(self) {
+					$(".sgs-fade").toggleClass("is-show");
+					self.destroy();
+					$('#typeAnimation').remove();
+				}
 			});	
 		};
 		// 自動入力停止
@@ -53,6 +58,7 @@ $(function(){
 			// console.log(typed.el.id);
 			typed.stop();
 			typed.destroy();
+			$(".sgs-fade").toggleClass("is-show");
 		};
 	}
 });

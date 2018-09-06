@@ -1,5 +1,5 @@
 body {
-  background-color: #000;
+  background-color: #121217;
 }
 
 .sgs-fade {
@@ -13,4 +13,12 @@ body {
 .sgs-fade.is-show {  
   opacity: 1;
   visibility: visible;
+}
+
+.text-white {
+    color:#FFFFFF;
+}
+
+.text-gray {
+    color:#B2B2B2
 }
