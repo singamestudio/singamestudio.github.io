@@ -10,9 +10,8 @@ $(function(){
 	// 処理
 	// -----------------
 	// 自動入力のセット
-	_SetupAutoInput('#autoInput', "> sin(studio) ");
-	
-	
+	_SetupAutoInput('#type-animation-text', "> sin(studio) ");
+		
 	// -----------------
 	// 関数定義
 	// -----------------
@@ -23,17 +22,8 @@ $(function(){
 	function _SetupAutoInput(domID, inputString)
 	{
 		var typed;
-		$(domID).on('inview', function(event, bIsInview)
-		{
-			if(bIsInview)
-			{
-				__StartAutoInput(domID, inputString);
-			}
-			else
-			{
-				__StopAutoInput();
-			}
-		});
+        __StartAutoInput(domID, inputString);
+
 		
 		// 自動入力開始
 		function __StartAutoInput(domID, inputString)
@@ -41,24 +31,19 @@ $(function(){
 			typed = new Typed(domID,
 			{
 				strings:[inputString],
-				typeSpeed: 40,
-				startDelay: 5,
+				typeSpeed: 100,
+				startDelay: 600,
 				loop: false,
 				contentType: 'html',
-				onComplete: function(self) {
-					$(".sgs-fade").toggleClass("is-show");
-					self.destroy();
-					$('#typeAnimation').remove();
+				onComplete: function(self) {                    
+					$('#type-animation').fadeOut(500).queue(function() {
+                        $('#main-contents').hide().fadeIn(500).queue(function() {
+                            $('#type-animation').remove();
+                            self.destroy();
+                        });
+                    });
 				}
 			});	
-		};
-		// 自動入力停止
-		function __StopAutoInput()
-		{
-			// console.log(typed.el.id);
-			typed.stop();
-			typed.destroy();
-			$(".sgs-fade").toggleClass("is-show");
 		};
 	}
 });
