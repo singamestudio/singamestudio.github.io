@@ -11,7 +11,8 @@ $(function(){
 	// -----------------
 	// 自動入力のセット
 	_SetupAutoInput('#type-animation-text', "> sin(studio) ");
-		
+    $('#main-contents').hide();
+    
 	// -----------------
 	// 関数定義
 	// -----------------
@@ -37,7 +38,7 @@ $(function(){
 				contentType: 'html',
 				onComplete: function(self) {                    
 					$('#type-animation').fadeOut(500).queue(function() {
-                        $('#main-contents').hide().fadeIn(500).queue(function() {
+                        $('#main-contents').fadeIn(500).queue(function() {
                             $('#type-animation').remove();
                             self.destroy();
                         });
