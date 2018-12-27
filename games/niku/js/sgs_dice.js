@@ -28,9 +28,28 @@ function init() {
 
 	// 箱を作成
 	const geometry = new THREE.BoxGeometry(400, 400, 400);
+	// 画像を読み込み
+	const loader = new THREE.TextureLoader();
+	loader.crossOrigin = 'anonymous';  
+	const texture = loader.load('./images/earthmap1k.jpg');
+	// マテリアルにテクスチャを設定
+	const material = new THREE.MeshToonMaterial({
+		map: texture
+	});
+	const box = new THREE.Mesh(geometry, material);
+	scene.add(box);
+/*
+	const geometry = new THREE.BoxGeometry(400, 400, 400);
 	const material = new THREE.MeshNormalMaterial();
 	const box = new THREE.Mesh(geometry, material);
 	scene.add(box);
+	*/
+
+	// 平行光源
+	const directionalLight = new THREE.DirectionalLight(0xFFFFFF);
+	directionalLight.position.set(1, 1, 1);
+	// シーンに追加
+	scene.add(directionalLight);
 
 	tick();
 
