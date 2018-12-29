@@ -12,32 +12,32 @@
 
         var boxInfo = [
                         {
-                url: 'http://jsrun.it/assets/g/N/z/s/gNzsx.png',
+                url: 'images/dice2.png',
                 position: [ -cubeSize, 0, 0 ],
                 rotation: [ 0, Math.PI / 2, 0 ]
             },
             {
-                url: 'http://jsrun.it/assets/b/X/8/T/bX8TN.png',
+                url: 'images/dice5.png',
                 position: [ cubeSize, 0, 0 ],
                 rotation: [ 0, -Math.PI / 2, 0 ]
             },
             {
-                url: 'http://jsrun.it/assets/u/G/6/B/uG6BH.png',
+                url: 'images/dice1.png',
                 position: [ 0,  cubeSize, 0 ],
                 rotation: [ Math.PI / 2, 0, Math.PI ]
             },
             {
-                url: 'http://jsrun.it/assets/e/s/z/w/eszwi.png',
+                url: 'images/dice6.png',
                 position: [ 0, -cubeSize, 0 ],
                 rotation: [ - Math.PI / 2, 0, Math.PI ]
             },
             {
-                url: 'http://jsrun.it/assets/9/t/3/9/9t39J.png',
+                url: 'images/dice3.png',
                 position: [ 0, 0,  cubeSize ],
                 rotation: [ 0, Math.PI, 0 ]
             },
             {
-                url: 'http://jsrun.it/assets/h/e/o/9/heo9V.png',
+                url: 'images/dice4.png',
                 position: [ 0, 0, -cubeSize ],
                 rotation: [ 0, 0, 0 ]
             }
