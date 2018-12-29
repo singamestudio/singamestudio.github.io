@@ -11,12 +11,14 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline; }
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+}
 
 html {
   line-height: 1; }
@@ -47,14 +49,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 #gui {
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 10px;
+    right: 10px;
+    top: 10px;
     z-index: 100;
     padding: 10px;
     font-size: 80px;
     background: rgba(0, 0, 0, 0.5);
     border: solid 1px #666;
     color: #fff; 
+    text-align: center;
 }
 
 #num {
@@ -62,8 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     left: 15px;
     bottom: 10px;
     z-index: 100;
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
-    font-size: 120px;
+    font-size: 110px;
     font-weight: bold;
     color: #fff;
     -webkit-text-stroke: 2px black;
@@ -77,8 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     z-index: 100;
     padding: 10px;
     color: #000;
-    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bolder;
     text-shadow: 1px 1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF, -1px -1px 0 #FFF;
     background: rgba(0, 0, 0, 0.5);
