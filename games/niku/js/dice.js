@@ -210,7 +210,7 @@
         function showNum(num) {
             doc.getElementById('num').innerHTML = num;
             
-            var gameinfoString = "　　　 入店人数：";
+            var gameinfoString = "入店人数：";
             if (num <= 3) {
                 gameinfoString += "1";
             } else if (num <= 5) {
@@ -218,22 +218,22 @@
             } else {
                 gameinfoString += "3";
             }
-            gameinfoString += "人<br>";
+            gameinfoString += "人";
             
-            gameinfoString += "　イベント 摘発：";
-            if (num >= 3) {
-                gameinfoString += "発生";
-            } else {
-                gameinfoString += "発生せず";
-            }
-            gameinfoString += "<br>";
-            
-            gameinfoString += "イベント 食中毒："
-            if (num >= 5) {
-                gameinfoString += "発生";
-            } else {
-                gameinfoString += "発生せず";
-            }
+//            gameinfoString += "　イベント 摘発：";
+//            if (num >= 3) {
+//                gameinfoString += "発生";
+//            } else {
+//                gameinfoString += "発生せず";
+//            }
+//            gameinfoString += "<br>";
+//            
+//            gameinfoString += "イベント 食中毒："
+//            if (num >= 5) {
+//                gameinfoString += "発生";
+//            } else {
+//                gameinfoString += "発生せず";
+//            }
             
             doc.getElementById('gameinfo').innerHTML = gameinfoString;
         }
