@@ -123,7 +123,7 @@
         var floorEle = doc.createElement('div');
         floorEle.style.width  = textureSize + 'px';
         floorEle.style.height = textureSize + 'px';
-        floorEle.style.background = 'url(http://jsrun.it/assets/d/x/0/w/dx0wl.png) left top repeat';
+        floorEle.style.background = 'url(images/dicebg.png) left top repeat';
         floorEle.style.backgroundSize = textureSize / 20 + 'px ' + textureSize / 20 + 'px';
 
         floorObj = new THREE.CSS3DObject(floorEle);
