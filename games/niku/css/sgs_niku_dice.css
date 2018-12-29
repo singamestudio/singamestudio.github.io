@@ -79,9 +79,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     bottom: 10px;
     z-index: 100;
     padding: 10px;
-    color: #000;
+    color: #fff;
     font-size: 60px;
     font-weight: bolder;
-    text-shadow: 1px 1px 0 #FFF, -1px 1px 0 #FFF, 1px -1px 0 #FFF, -1px -1px 0 #FFF;
     background: rgba(0, 0, 0, 0.5);
 }
