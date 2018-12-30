@@ -6,7 +6,7 @@
     var world, ground, timeStep = 1 / 60,
         diceRigid, dice,
         camera, scene, renderer, floorObj,
-        cubeSize = 5;
+        cubeSize = 10;
 
     function createDice() {
 
